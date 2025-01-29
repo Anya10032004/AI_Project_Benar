@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
  # Create the Flask app
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 def clip_outliers(data, lower_percentile=0.25, upper_percentile=0.75, factor=1.5):
     df_clipped = data.copy()
