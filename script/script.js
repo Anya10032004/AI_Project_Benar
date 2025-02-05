@@ -21,6 +21,9 @@ document.querySelector(".input-form").addEventListener("submit", async (event) =
         const pregnancy = document.getElementById('pregnancy').value;
         const skinThickness = document.getElementById('skinThickness').value;
         const age = document.getElementById('age').value;
+
+        console.log(name, glucose, bmi, bloodPressure, insulin, pregnancy, skinThickness, age); // Debugging
+
     
         if (!name || !glucose || !bmi || !bloodPressure || !insulin || !pregnancy || !skinThickness || !age) {
             alert("Please fill in all fields.");
