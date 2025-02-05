@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diabetes Prediction</title>
     
-<!--     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/styles/styles.css') }}">
- -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/styles/styles.css') }}">
+
 <!--     <link rel="stylesheet" type="text/css" href="styles/styles.css">
  -->
     <link rel="stylesheet" href="styles/styles.css">
@@ -29,7 +29,7 @@
                 <p class="consult">Please consult a medical expert for more in-depth diagnosis</p>
                 <p class="input-notice">Please fill <span class="highlight">ALL</span> required parameters</p>
 
-                <form class="input-form" onsubmit="return validateForm()">
+                <form class="input-form" onsubmit="validateForm()">
                     <div class="input-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Enter name">
@@ -170,9 +170,9 @@
 <!--     <script src="script/script.js"></script> -->
 <!--         <script type="text/javascript" src="static/script/script.js"></script> 
       -->
-<!--       <script src="{{ url_for('static', filename='script/script.js') }}"></script>
-     -->
-    <script src="script/script.js"></script>
+      <script src="{{ url_for('static', filename='static/script/script.js') }}"></script>
+    
+<!--     <script src="script/script.js"></script> -->
 
 
 </body>
